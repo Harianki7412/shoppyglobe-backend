@@ -45,7 +45,7 @@ Follow these steps to get the ShoppyGlobe backend up and running on your local m
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/shoppyglobe-backend.git](https://github.com/yourusername/shoppyglobe-backend.git)
+    git clone (`https://github.com/Harianki7412/shoppyglobe-backend.git`)
     cd shoppyglobe-backend
     ```
 2.  **Install dependencies:**
