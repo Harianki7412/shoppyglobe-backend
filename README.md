@@ -84,13 +84,13 @@ API Endpoints
 Here are screenshots of the database collections showing the structure and data.
 
 #### cart Collection
-[Product Collection](/ScreenSort/Mogoose_cart.jpg)
+![Product Collection](/ScreenSort/Mogoose_cart.jpg)
 
 #### User Collection
-[User Collection](/ScreenSort/Mongoose_User.jpg)
+![User Collection](/ScreenSort/Mongoose_User.jpg)
 
 #### Prodect Collection
-[User Collection](/ScreenSort/Mongoose_Prodect.jpg)
+![User Collection](/ScreenSort/Mongoose_Prodect.jpg)
 
 ### Tasting Thunder (ThunderClient/Postman)
 
