@@ -1,7 +1,6 @@
 import Cart from "../models/Cart.js";
 import Product from "../models/Product.js";
 
-// POST /cart - Add product to cart or update quantity if exists
 export const addToCart = async (req, res, next) => {
   try {
     const userId = req.user.userId;
@@ -24,14 +23,12 @@ export const addToCart = async (req, res, next) => {
     const itemIndex = cart.items.findIndex(item => item.product.toString() === productId);
 
     if (itemIndex > -1) {
-      // If exists, update quantity
       const newQuantity = cart.items[itemIndex].quantity + quantity;
       if (newQuantity > product.stockQuantity) {
         return res.status(400).json({ message: "Quantity exceeds stock available" });
       }
       cart.items[itemIndex].quantity = newQuantity;
     } else {
-      // Add new product to cart
       cart.items.push({ product: productId, quantity });
     }
 

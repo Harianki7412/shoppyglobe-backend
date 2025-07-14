@@ -1,9 +1,9 @@
 import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
 
-dotenv.config();
+
+
 
 // POST /register - Register user
 export const registerUser = async (req, res, next) => {
@@ -40,7 +40,7 @@ export const loginUser = async (req, res, next) => {
     if (!isMatch) return res.status(401).json({ message: "Invalid credentials" });
 
     const payload = { userId: user._id, email: user.email };
-    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: process.env.TOKEN_EXPIRES_IN || '1d' });
+    const token = jwt.sign(payload, "your_jwt_secret_key",  '1d' );
 
     res.json({ token });
   } catch (err) {
