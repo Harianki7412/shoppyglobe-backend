@@ -23,7 +23,6 @@ This is the backend API for the ShoppyGlobe e-commerce application, built using 
 - MongoDB & Mongoose
 - JSON Web Tokens (JWT)
 - bcryptjs (password hashing)
-- dotenv (environment variables)
 - cors (cross-origin requests)
 
 ---
@@ -40,16 +39,9 @@ This is the backend API for the ShoppyGlobe e-commerce application, built using 
     ```bash
     npm install
     ```
-3.  **Create a `.env` file:**
-    In the root directory of your project, create a file named `.env` and add the following variables, replacing the placeholder values:
 
-    ## Environment Variables
-    PORT=5000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret_key
-    TOKEN_EXPIRES_IN=1d
 
-4.  **Start the development server:**
+3.  **Start the development server:**
     ```bash
     npm run dev
     ```
